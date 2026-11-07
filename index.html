@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0b1320">
+  <meta name="description" content="Portfólio de Kauan Borges — estudante de Análise e Desenvolvimento de Sistemas, com projetos em desenvolvimento de software, dados e tecnologia.">
+  <title>Kauan Borges · Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#inicio" aria-label="Kauan Borges — início">kb<span>.dev</span></a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="primaryNav">
+        <span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="primaryNav" aria-label="Navegação principal">
+        <a href="#sobre" data-i18n="nav.about">Sobre</a>
+        <a href="#tecnologias" data-i18n="nav.stack">Tecnologias</a>
+        <a href="#projetos" data-i18n="nav.projects">Projetos</a>
+        <a href="#experiencia" data-i18n="nav.experience">Experiência</a>
+        <a href="#formacao" data-i18n="nav.education">Formação</a>
+        <a href="#contato" data-i18n="nav.contact">Contato</a>
+      </nav>
+
+      <div class="language-switch" role="group" aria-label="Selecionar idioma">
+        <button type="button" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="es" aria-pressed="false">ES</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="hero wrap" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <div class="availability"><span class="availability-light" aria-hidden="true"></span><span data-i18n="hero.status">Disponível para oportunidades</span></div>
+        <p class="eyebrow" data-i18n="hero.eyebrow">PORTFÓLIO · TECNOLOGIA & DESENVOLVIMENTO</p>
+        <h1 id="heroTitle"><span>Kauan</span><span class="name-outline">Borges</span></h1>
+        <p class="hero-role" data-i18n="hero.role">Desenvolvimento de Sistemas <span class="role-separator">·</span> Suporte de TI</p>
+        <p class="hero-lead" data-i18n="hero.lead">Estudante de Análise e Desenvolvimento de Sistemas, interessado em transformar necessidades reais em soluções digitais bem estruturadas. Uno experiência em processos empresariais a projetos de software, dados e tecnologia.</p>
+
+        <dl class="hero-facts">
+          <div><dt data-i18n="hero.cityLabel">LOCAL</dt><dd>Taboão da Serra, SP</dd></div>
+          <div><dt data-i18n="hero.semesterLabel">FORMAÇÃO</dt><dd data-i18n="hero.semester">ADS · 5º semestre</dd></div>
+          <div><dt data-i18n="hero.schoolLabel">INSTITUIÇÃO</dt><dd>UniFECAF</dd></div>
+        </dl>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projetos"><span data-i18n="hero.projectsCta">Explorar projetos</span><span aria-hidden="true">↗</span></a>
+          <a class="button button-quiet" href="#contato" data-i18n="hero.contactCta">Entrar em contato</a>
+        </div>
+      </div>
+
+      <div class="assistant-column">
+        <div class="assistant-stage" id="assistantStage">
+          <div class="assistant-orbit orbit-one"></div>
+          <div class="assistant-orbit orbit-two"></div>
+          <div class="assistant-glow"></div>
+          <div class="assistant-bubble" id="assistantBubble" aria-live="polite">
+            <span class="bubble-dot"></span><span data-i18n="assistant.greeting">Olá! Sou seu assistente. Posso apresentar o portfólio.</span>
+          </div>
+          <canvas class="assistant-avatar" id="assistantAvatar" role="img" aria-label="Assistente virtual: robô 3D com cabeça em formato de monitor de computador"></canvas>
+          <button class="assistant-interaction" id="assistantInteract" type="button" data-i18n="assistant.hint" aria-label="Interagir com o assistente">clique para conversar · arraste para girar</button>
+        </div>
+        <div class="assistant-caption"><span class="caption-line"></span><span data-i18n="assistant.caption">ASSISTENTE PESSOAL · À SUA DISPOSIÇÃO</span></div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="sobre" aria-labelledby="aboutTitle">
+      <div class="section-heading">
+        <p class="section-index">01 / <span data-i18n="section.aboutIndex">APRESENTAÇÃO</span></p>
+        <h2 id="aboutTitle" data-i18n="about.title">Sobre mim</h2>
+      </div>
+      <div class="about-layout">
+        <div class="profile-frame">
+          <div class="profile-ring">
+            <img id="profilePhoto" src="https://avatars.githubusercontent.com/u/230409781?v=4" alt="Foto de perfil de Kauan Borges no GitHub" referrerpolicy="no-referrer">
+            <span class="profile-fallback" id="profileFallback" aria-hidden="true">KB</span>
+          </div>
+          <span class="photo-note" data-i18n="about.photoNote">PERFIL PROFISSIONAL</span>
+        </div>
+
+        <div class="about-copy">
+          <p class="about-intro" data-i18n="about.p1">Sou estudante de Análise e Desenvolvimento de Sistemas na UniFECAF e tenho experiência prática em processos empresariais, gestão da informação e atividades de marketing digital.</p>
+          <p data-i18n="about.p2">Na Bimbo Brasil, atuei com organização de planilhas, processamento de pedidos e conferência de documentos fiscais. Como freelancer de gestão de tráfego, planejei campanhas no Google Ads e Facebook Ads, com foco em captação de leads e conversão.</p>
+          <p data-i18n="about.p3">Na área de tecnologia, desenvolvo projetos acadêmicos que conectam programação, bancos de dados e resolução de problemas. Tenho contato com Java, Python, JavaScript, TypeScript e PostgreSQL, além de estudos em inteligência artificial, machine learning e cibersegurança.</p>
+          <dl class="about-facts">
+            <div><dt data-i18n="about.degreeLabel">FORMAÇÃO</dt><dd data-i18n="about.degree">Análise e Desenvolvimento de Sistemas</dd></div>
+            <div><dt data-i18n="about.graduationLabel">CONCLUSÃO PREVISTA</dt><dd data-i18n="about.graduation">Dezembro de 2026 · 12/26</dd></div>
+            <div><dt data-i18n="about.focusLabel">INTERESSES</dt><dd data-i18n="about.focus">Desenvolvimento · Suporte · Dados</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="tecnologias" aria-labelledby="stackTitle">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="section-index">02 / <span data-i18n="section.stackIndex">FERRAMENTAS</span></p>
+          <h2 id="stackTitle" data-i18n="stack.title">Tecnologias</h2>
+          <p class="section-description" data-i18n="stack.description">Tecnologias e ferramentas presentes na minha formação e nos projetos desenvolvidos.</p>
+        </div>
+        <div class="stack-grid">
+          <article class="stack-card">
+            <span class="stack-number">01</span><h3 data-i18n="stack.languages">Linguagens & desenvolvimento</h3>
+            <div class="chips"><span>Java</span><span>Python</span><span>JavaScript</span><span>TypeScript</span><span>HTML5</span><span>CSS3</span><span>Node.js</span><span>Express</span></div>
+          </article>
+          <article class="stack-card">
+            <span class="stack-number">02</span><h3 data-i18n="stack.databases">Banco de dados</h3>
+            <div class="chips"><span>PostgreSQL</span><span>MySQL</span></div>
+          </article>
+          <article class="stack-card">
+            <span class="stack-number">03</span><h3 data-i18n="stack.tools">Ferramentas & produtividade</h3>
+            <div class="chips"><span>Git</span><span>GitHub</span><span>Figma</span><span>Canva</span><span>Notion</span><span>Miro</span><span>Microsoft 365</span><span>Google Workspace</span></div>
+          </article>
+          <article class="stack-card">
+            <span class="stack-number">04</span><h3 data-i18n="stack.study">Áreas de estudo aplicado</h3>
+            <div class="chips"><span>Machine Learning</span><span>Inteligência Artificial</span><span data-i18n="stack.cyber">Cibersegurança</span><span>Gestão da informação</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="projetos" aria-labelledby="projectsTitle">
+      <div class="section-heading">
+        <p class="section-index">03 / <span data-i18n="section.projectsIndex">APLICAÇÕES</span></p>
+        <h2 id="projectsTitle" data-i18n="projects.title">Projetos selecionados</h2>
+        <p class="section-description" data-i18n="projects.description">Soluções acadêmicas e pessoais que representam minha evolução em desenvolvimento, dados e experiência digital.</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card project-featured">
+          <div class="project-top"><span class="project-category">01 / WEB APPLICATION</span><span class="project-status" data-i18n="projects.group">Projeto em grupo</span></div>
+          <h3>IntelliFit</h3>
+          <p data-i18n="projects.intellifit">Plataforma web de gestão inteligente de alimentos, com controle de estoque, monitoramento de validade e recomendação de receitas com auxílio de chatbot.</p>
+          <div class="project-tech"><span>HTML/CSS</span><span>JavaScript</span><span>TypeScript</span><span>Node.js</span><span>Express</span><span>PostgreSQL</span></div>
+          <div class="project-foot"><span data-i18n="projects.focus">Gestão inteligente · Web</span><span class="project-arrow">↗</span></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top"><span class="project-category">02 / MACHINE LEARNING</span><span class="project-status" data-i18n="projects.academic">Projeto acadêmico</span></div>
+          <h3>FluentIQ</h3>
+          <p data-i18n="projects.fluentiq">Plataforma web para ensino de idiomas, com acompanhamento de progresso, recomendação de conteúdos, trilhas personalizadas e suporte via chatbot.</p>
+          <div class="project-tech"><span>HTML</span><span>CSS</span><span>TypeScript</span><span>Machine Learning</span></div>
+          <div class="project-foot"><span data-i18n="projects.focusLearning">Educação · Personalização</span><span class="project-arrow">↗</span></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top"><span class="project-category">03 / API · QA</span><span class="project-status" data-i18n="projects.group">Projeto em grupo</span></div>
+          <h3>Movie API</h3>
+          <p data-i18n="projects.movie">API para consulta, cadastro, edição e exclusão de filmes, estruturada com operações CRUD e banco de dados SQLite.</p>
+          <div class="project-tech"><span>Python</span><span>SQLite</span><span>CRUD</span><span>Quality Assurance</span></div>
+          <div class="project-foot"><span data-i18n="projects.focusApi">API · Qualidade de software</span><span class="project-arrow">↗</span></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top"><span class="project-category">04 / DESKTOP · JAVA</span><span class="project-status" data-i18n="projects.group">Projeto em grupo</span></div>
+          <h3 data-i18n="projects.inventoryTitle">Sistema de Controle de Estoque</h3>
+          <p data-i18n="projects.inventory">Sistema de vendas e controle de estoque desenvolvido em Java, com níveis de acesso para clientes e administradores, operações CRUD e integração com banco de dados.</p>
+          <div class="project-tech"><span>Java</span><span>POO</span><span>CRUD</span><span data-i18n="projects.database">Banco de dados</span></div>
+          <div class="project-foot"><span data-i18n="projects.focusManagement">Gestão · Sistemas</span><span class="project-arrow">↗</span></div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-top"><span class="project-category">05 / UX · UI</span><span class="project-status" data-i18n="projects.group">Projeto em grupo</span></div>
+          <h3>Basic Wear</h3>
+          <p data-i18n="projects.basicwear">E-commerce para comercialização online de vestuário e produtos diversos, com catálogo de produtos, funcionalidades de compra e administração de pedidos.</p>
+          <div class="project-tech"><span>HTML</span><span>CSS</span><span>UX/UI</span><span data-i18n="projects.ecommerce">E-commerce</span></div>
+          <div class="project-foot"><span data-i18n="projects.focusDesign">Design web · Experiência digital</span><span class="project-arrow">↗</span></div>
+        </article>
+      </div>
+      <p class="project-note" data-i18n="projects.note">Os projetos são apresentados conforme as informações do currículo. Consulte meu GitHub para acompanhar os repositórios públicos.</p>
+    </section>
+
+    <section class="section section-soft" id="experiencia" aria-labelledby="experienceTitle">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="section-index">04 / <span data-i18n="section.experienceIndex">TRAJETÓRIA</span></p>
+          <h2 id="experienceTitle" data-i18n="experience.title">Experiência profissional</h2>
+        </div>
+        <ol class="timeline">
+          <li>
+            <div class="timeline-date"><b>07/2023 — 12/2023</b><span data-i18n="experience.freelanceType">Freelancer</span></div>
+            <div class="timeline-content"><h3 data-i18n="experience.trafficTitle">Gestor de Tráfego</h3><p class="timeline-company" data-i18n="experience.trafficCompany">Atuação independente</p><p data-i18n="experience.trafficDesc">Planejamento e criação de campanhas no Google Ads e Facebook Ads, desenvolvimento de estratégias para captação de leads e conversão de vendas e gerenciamento de campanhas para negócios locais e digitais.</p></div>
+          </li>
+          <li>
+            <div class="timeline-date"><b>04/2022 — 01/2023</b><span data-i18n="experience.apprenticeType">Jovem Aprendiz</span></div>
+            <div class="timeline-content"><h3>Bimbo Brasil LTDA</h3><p class="timeline-company" data-i18n="experience.apprenticeCompany">Centro de Vendas · Rotinas administrativas</p><p data-i18n="experience.apprenticeDesc">Preenchimento, atualização e organização de planilhas em Excel; apoio às rotinas operacionais e administrativas; processamento de pedidos no sistema interno e conferência de notas fiscais relacionadas às entregas.</p></div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section wrap" id="formacao" aria-labelledby="educationTitle">
+      <div class="section-heading">
+        <p class="section-index">05 / <span data-i18n="section.educationIndex">FORMAÇÃO CONTÍNUA</span></p>
+        <h2 id="educationTitle" data-i18n="education.title">Formação & certificações</h2>
+      </div>
+      <div class="education-layout">
+        <article class="degree-card">
+          <span class="degree-overline" data-i18n="education.current">EM ANDAMENTO</span>
+          <h3 data-i18n="education.degree">Análise e Desenvolvimento de Sistemas</h3>
+          <p class="degree-school">UniFECAF</p>
+          <div class="degree-meta"><span data-i18n="education.semester">5º semestre</span><span>2024 — 2026</span></div>
+          <p class="graduation-note"><span data-i18n="education.expected">Conclusão prevista</span><strong>12/2026</strong></p>
+        </article>
+
+        <div class="certifications">
+          <h3 data-i18n="education.certTitle">Cursos & certificações</h3>
+          <ul class="cert-list">
+            <li><span data-i18n="cert.cyber">Cibersegurança</span><small>IBSEC</small></li>
+            <li><span data-i18n="cert.java">Java POO</span><small>Udemy</small></li>
+            <li><span data-i18n="cert.html">HTML5: Fundamentos para Construção de Páginas Web Modernas</span><small>MEC</small></li>
+            <li><span data-i18n="cert.office">Pacote Office Avançado</span><small>Fundação Bradesco</small></li>
+            <li><span data-i18n="cert.excelPractice">Excel na prática</span><small>Fundação Bradesco</small></li>
+            <li><span data-i18n="cert.excel">Excel — do básico ao intermediário</span><small>Santander Open Academy</small></li>
+            <li><span data-i18n="cert.english">English B2 Upper Intermediate Certificate</span><small>EF SET</small></li>
+            <li><span data-i18n="cert.englishCourse">Inglês — do básico ao avançado</span><small>CNA Taboão da Serra</small></li>
+            <li><span data-i18n="cert.marketing">Marketing Digital e Gestão de Tráfego</span><small>Udemy</small></li>
+          </ul>
+        </div>
+      </div>
+      <div class="languages-line"><span class="languages-label" data-i18n="education.languagesLabel">IDIOMAS</span><span><span data-i18n="education.englishLabel">Inglês</span> <b data-i18n="education.english">B2 · Intermediário</b></span><span><span data-i18n="education.spanishLabel">Espanhol</span> <b data-i18n="education.spanish">Básico</b></span></div>
+    </section>
+
+    <section class="section contact-section" id="contato" aria-labelledby="contactTitle">
+      <div class="wrap">
+        <div class="section-heading">
+          <p class="section-index">06 / <span data-i18n="section.contactIndex">PRÓXIMO PASSO</span></p>
+          <h2 id="contactTitle" data-i18n="contact.title">Vamos conversar?</h2>
+          <p class="contact-lead" data-i18n="contact.lead">Estou aberto a oportunidades de estágio e a projetos em suporte, desenvolvimento e dados.</p>
+        </div>
+        <div class="contact-layout">
+          <div class="contact-copy">
+            <p class="contact-small" data-i18n="contact.invite">Será um prazer conversar sobre tecnologia, ideias e oportunidades.</p>
+            <a class="contact-email" href="mailto:kauanborges20151963@outlook.com">kauanborges20151963@outlook.com <span>↗</span></a>
+            <div class="contact-links">
+              <a href="https://www.linkedin.com/in/kauan-borges-96b8562a7/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+              <a href="https://github.com/kauanBA" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+              <a href="https://wa.me/5511989899105" target="_blank" rel="noreferrer" data-i18n="contact.whatsapp">WhatsApp <span>↗</span></a>
+            </div>
+          </div>
+          <div class="terminal-card" aria-label="Painel de contato">
+            <div class="terminal-bar"><span></span><span></span><span></span><small>kauan@portfolio:~</small></div>
+            <div class="terminal-body">
+              <p><span class="terminal-prompt">$</span> <span data-i18n="contact.terminal1">iniciando conexão...</span></p>
+              <p class="terminal-success">✓ <span data-i18n="contact.terminal2">perfil profissional carregado</span></p>
+              <p><span class="terminal-prompt">$</span> <span data-i18n="contact.terminal3">aguardando sua mensagem</span><span class="terminal-cursor"></span></p>
+              <button class="copy-email" id="copyEmail" type="button"><span data-i18n="contact.copy">Copiar e-mail</span><span aria-hidden="true">⧉</span></button>
+              <span class="copy-feedback" id="copyFeedback" aria-live="polite"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner"><span>© <span id="year"></span> Kauan Borges</span><span data-i18n="footer.note">Construído com intenção, código e curiosidade.</span><a href="#inicio" data-i18n="footer.top">Voltar ao topo ↑</a></div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
